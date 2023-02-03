@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <h1 class="task">Tasks <span class="list">List</h1>
+    <div class="no">No Items in the Tasklist</div>
+    <span class="i"><i class="fa-solid fa-circle-plus" onclick="addTask()"></i><span>Add Item</span></span>
+    </div>
+    <div class="popup">
+        <div class="popbox">
+            <div class="new">Add New Task List</div>
+            <input type="text" id="name" placeholder="Add New List" required>
+            <button class="add" id="btn" onclick="add()">Add</button>
+            <button class="add close" onclick="close()">Close</button>
+        </div>
+    </div>
+    <div id="parent"></div>
+
+    <div class="popup1">
+        <div class="popbox1">
+            <div class="new1">Add New Task List</div>
+            <input type="text" id="name2" class="text1" placeholder="Add New List">
+            <button class="add1" id="addbtn2">Add</button>
+            <button class="add1 close1" onclick="close()">Close</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
